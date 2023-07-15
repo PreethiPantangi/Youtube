@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {YOUTUBE_MOST_POPULAR_VIDEOS_API} from '../utils/constants';
 import VideoCard from './VideoCard';
+import { Link } from 'react-router-dom';
 
 const VideoContainer = () => {
 
@@ -13,7 +14,6 @@ const VideoContainer = () => {
   const getMostPopularVideos = async () => {
     const data = await fetch(YOUTUBE_MOST_POPULAR_VIDEOS_API);
     const json = await data.json();
-    console.log(json.items);
     setVideos(json.items);
   };
 
@@ -22,7 +22,7 @@ const VideoContainer = () => {
   return (
     <div className='flex flex-wrap'>
       {
-        videos.map((video) => <VideoCard videoInfo = {video}/>)
+        videos.map((video) => <Link key={video.id} to={"/watch?v=" + video.id}><VideoCard videoInfo = {video}/></Link>)
       }
     </div>
   )

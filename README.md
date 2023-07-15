@@ -23,3 +23,8 @@
 10. Accessing the isMenuOpen from appSlice using the useSelector and displaying the sidebar accordingly.
 11. Created the button list component by reusing the button component 
 12. Developed the VideoContainer part of the page by fetching most popular videos 
+13. Installed routing by running the command react-router-dom
+14. Created the app router in App.js using createBrowserRoute
+15. Configured the routes for the application - "/", and "/watch"
+16. Added Link to VideoCard byt passing watch and video id 
+16. Developed the watch page by embedding the iframe 

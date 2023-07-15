@@ -1,7 +1,6 @@
 import React from "react";
 
 const VideoCard = ({ videoInfo }) => {
-  console.log(videoInfo);
 
   const formatTimeSince = (dateString) => {
     const currentDate = new Date();
