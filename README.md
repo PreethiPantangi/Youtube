@@ -21,3 +21,5 @@
 8. Created store and appSlice in utils
 9. Providing store to App.js using Provider 
 10. Accessing the isMenuOpen from appSlice using the useSelector and displaying the sidebar accordingly.
+11. Created the button list component by reusing the button component 
+12. Developed the VideoContainer part of the page by fetching most popular videos 

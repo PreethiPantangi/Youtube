@@ -6,9 +6,9 @@ const Sidebar = () => {
 
   if (!isMenuOpen) {
     return (
-      <div className="p-2 m-2 w-20">
+      <div className="p-2 m-2 w-40">
         <ul>
-          <li className="flex hover:bg-gray-100 hover:rounded-lg p-2 cursor-pointer">
+          <li className="flex hover:bg-gray-100 hover:rounded-lg p-2 cursor-pointer text-sm">
             <p>Home</p>
           </li>
           <li className="flex hover:bg-gray-100 hover:rounded-lg p-2 cursor-pointer text-sm">
@@ -25,7 +25,7 @@ const Sidebar = () => {
     );
   } else {
     return (
-      <div className="p-2 m-2 w-52">
+      <div className="p-2 m-2 w-60">
         <ul>
           <li className="flex hover:bg-gray-100 hover:rounded-lg p-2 cursor-pointer">
             Home
