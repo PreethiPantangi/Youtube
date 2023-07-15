@@ -10,16 +10,6 @@ function App() {
       <div className="App">
         <Header />
         <Body />
-        {/**
-         * Header
-         * Body
-         *  Sidebar
-         *    MenuItems
-         *  MainContainer
-         *    ButtonsList
-         *    VideoContainer
-         *      VideoCard
-         */}
       </div>
     </Provider>
   );
